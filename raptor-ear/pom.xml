@@ -20,10 +20,12 @@
   		<artifactId>raptor-web</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
   		<type>war</type>
+  		<scope>runtime</scope>
   	</dependency>
   </dependencies>
   
   <build>
+  	<finalName>raptor-ear</finalName>
     <plugins>
       <plugin>
         <artifactId>maven-ear-plugin</artifactId>
