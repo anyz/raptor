@@ -36,7 +36,7 @@
 					<groupId>com.prodigi</groupId>
 					<artifactId>raptor-web</artifactId>
 					<bundleFileName>raptor-web.war</bundleFileName>
-					<contextRoot>prodigi/raptor</contextRoot>
+					<contextRoot>prodigi/raptor/ux</contextRoot>
 				</webModule>
 			</modules>
 			<applicationXml>${basedir}/src/main/application/META-INF/application.xml</applicationXml>
