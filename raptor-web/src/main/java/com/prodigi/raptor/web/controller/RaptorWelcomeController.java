@@ -1,22 +1,28 @@
 package com.prodigi.raptor.web.controller;
 
+import java.text.DateFormat;
+import java.util.Date;
+
 import javax.servlet.http.HttpServletRequest;
 
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class RaptorWelcomeController {
 
-	private static Logger log = Logger.getLogger(RaptorWelcomeController.class);
+	private final Logger log = Logger.getLogger(this.getClass().getName());
 	
-	@RequestMapping("/")
-	public ModelAndView launchHome(HttpServletRequest req, Model model) throws Exception {
+	@RequestMapping("/home")
+	public String launchHome(HttpServletRequest req, Model model) throws Exception {
 		log.info("launching home page");
-		return new ModelAndView("index");
+		System.out.println("*****************");
+		Date date = new Date();
+		
+		model.addAttribute("serverTime", date.toString() );
+		return "default";
 	}
 	
 }
