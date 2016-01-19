@@ -7,7 +7,7 @@
   <module>
     <web>
       <web-uri>raptor-web.war</web-uri>
-      <context-root>/raptor-web</context-root>
+      <context-root>raptor-web</context-root>
     </web>
   </module>
 </application>
