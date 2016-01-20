@@ -24,4 +24,9 @@ public class RaptorWelcomeController {
 		return "default";
 	}
 	
+	@RequestMapping("/admin")
+	public String adminLaunch(HttpServletRequest req, Model model) throws Exception {
+		return "admin";
+	}
+	
 }
